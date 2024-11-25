@@ -1,0 +1,12 @@
+{
+  "_fv": 57,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "BACKSLASH",
+    "keyBindingName": "Exit Exoskeleton",
+    "keyBindingCategoryKey": "misc",
+    "onKeyReleased": {
+      "name": "ExitExoskeletonProced"
+    }
+  }
+}

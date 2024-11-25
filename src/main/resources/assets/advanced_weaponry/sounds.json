@@ -1,0 +1,38 @@
+{
+  "laserdelta": {
+    "subtitle": "subtitles.laserdelta",
+    "sounds": [
+      {
+        "name": "advanced_weaponry:laserdeltal",
+        "stream": false
+      }
+    ]
+  },
+  "metalclick": {
+    "subtitle": "subtitles.metalclick",
+    "sounds": [
+      {
+        "name": "advanced_weaponry:metalclick",
+        "stream": false
+      }
+    ]
+  },
+  "machinehum": {
+    "subtitle": "subtitles.machinehum",
+    "sounds": [
+      {
+        "name": "advanced_weaponry:short_motor_sound",
+        "stream": false
+      }
+    ]
+  },
+  "machineshutdown": {
+    "subtitle": "subtitles.machineshutdown",
+    "sounds": [
+      {
+        "name": "advanced_weaponry:short_motor_shutdown",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,717 @@
+{
+  "mod_elements": [
+    {
+      "name": "Exoskeleton",
+      "type": "armor",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exoskeleton",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advancedweaponry/item/ExoskeletonItem.java",
+          "src/main/resources/assets/advanced_weaponry/models/item/exoskeleton_boots.json",
+          "src/main/resources/assets/advanced_weaponry/models/item/exoskeleton_helmet.json",
+          "src/main/resources/assets/advanced_weaponry/models/item/exoskeleton_leggings.json",
+          "src/main/resources/assets/advanced_weaponry/models/item/exoskeleton_chestplate.json"
+        ]
+      },
+      "path": "~/Exoskeleton"
+    },
+    {
+      "name": "ExoChestplateTick",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exo_chestplate_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advancedweaponry/procedures/ExoChestplateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Exoskeleton"
+    },
+    {
+      "name": "ExoskeletonTooltip",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exoskeleton_tooltip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advancedweaponry/procedures/ExoskeletonTooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Exoskeleton"
+    },
+    {
+      "name": "BeamEntity",
+      "type": "livingentity",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beam_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advancedweaponry/entity/BeamEntityEntity.java",
+          "src/main/java/net/mcreator/advancedweaponry/client/renderer/BeamEntityRenderer.java"
+        ]
+      },
+      "path": "~/BeamRifle"
+    },
+    {
+      "name": "BeamRifle",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beam_rifle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/advanced_weaponry/models/item/beam_rifle.json",
+          "src/main/java/net/mcreator/advancedweaponry/item/BeamRifleItem.java"
+        ]
+      },
+      "path": "~/BeamRifle"
+    },
+    {
+      "name": "BeamRifleShoot",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beam_rifle_shoot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advancedweaponry/procedures/BeamRifleShootProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/BeamRifle"
+    },
+    {
+      "name": "BeamMovement",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beam_movement",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advancedweaponry/procedures/BeamMovementProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/BeamRifle"
+    },
+    {
+      "name": "ScreenShake",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "screen_shake",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advancedweaponry/procedures/ScreenShakeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ExplosionNearby",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosion_nearby",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advancedweaponry/procedures/ExplosionNearbyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ExoHelmetTick",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exo_helmet_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advancedweaponry/procedures/ExoHelmetTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Exoskeleton"
+    },
+    {
+      "name": "ExoskeletonEquipIfTouch",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exoskeleton_equip_if_touch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advancedweaponry/procedures/ExoskeletonEquipIfTouchProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Exoskeleton"
+    },
+    {
+      "name": "ExoskeletonEquipCooldown",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exoskeleton_equip_cooldown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advancedweaponry/procedures/ExoskeletonEquipCooldownProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Exoskeleton"
+    },
+    {
+      "name": "ExoskeletonEntity",
+      "type": "livingentity",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exoskeleton_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advancedweaponry/client/renderer/ExoskeletonEntityRenderer.java",
+          "src/main/resources/data/advanced_weaponry/forge/biome_modifier/exoskeleton_entity_biome_modifier.json",
+          "src/main/resources/assets/advanced_weaponry/models/item/exoskeleton_entity_spawn_egg.json",
+          "src/main/java/net/mcreator/advancedweaponry/entity/ExoskeletonEntityEntity.java"
+        ]
+      },
+      "path": "~/Exoskeleton"
+    },
+    {
+      "name": "ExitExoskeletonProced",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exit_exoskeleton_proced",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advancedweaponry/procedures/ExitExoskeletonProcedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Exoskeleton"
+    },
+    {
+      "name": "ExitExoskeleton",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exit_exoskeleton",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advancedweaponry/network/ExitExoskeletonMessage.java"
+        ]
+      },
+      "path": "~/Exoskeleton"
+    },
+    {
+      "name": "EMP",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advancedweaponry/potion/EMPMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "EMPGrenade",
+      "type": "item",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emp_grenade",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/advanced_weaponry/models/item/emp_grenade.json",
+          "src/main/java/net/mcreator/advancedweaponry/item/EMPGrenadeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Self_EMP",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "self_emp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advancedweaponry/procedures/Self_EMPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EMPStart",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emp_start",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advancedweaponry/procedures/EMPStartProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ExoLegsTick",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exo_legs_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advancedweaponry/procedures/ExoLegsTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Exoskeleton"
+    },
+    {
+      "name": "ExoBootsTick",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exo_boots_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advancedweaponry/procedures/ExoBootsTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Exoskeleton"
+    },
+    {
+      "name": "ExoBootsFallDamage",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exo_boots_fall_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advancedweaponry/procedures/ExoBootsFallDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Exoskeleton"
+    },
+    {
+      "name": "ExoBootPowerReduction",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exo_boot_power_reduction",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advancedweaponry/procedures/ExoBootPowerReductionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Exoskeleton"
+    },
+    {
+      "name": "EMP_Tick",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emp_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advancedweaponry/procedures/EMP_TickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ExoSkeletonCharging",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exo_skeleton_charging",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advancedweaponry/procedures/ExoSkeletonChargingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Exoskeleton"
+    },
+    {
+      "name": "ExoskeletonCharger",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exoskeleton_charger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/advancedweaponry/block/entity/ExoskeletonChargerBlockEntity.java",
+          "src/main/resources/assets/advanced_weaponry/models/item/exoskeleton_charger.json",
+          "src/main/java/net/mcreator/advancedweaponry/block/ExoskeletonChargerBlock.java",
+          "src/main/resources/assets/advanced_weaponry/models/block/exoskeleton_charger.json",
+          "src/main/resources/assets/advanced_weaponry/blockstates/exoskeleton_charger.json"
+        ]
+      },
+      "path": "~/Exoskeleton"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "ScreenshakeTicks",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "HeadlockPitch",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "HeadlockYaw",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "EBPower",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "laserdelta",
+      "files": [
+        "laserdeltal"
+      ],
+      "category": "neutral",
+      "subtitle": "A Laser FIres"
+    },
+    {
+      "name": "metalclick",
+      "files": [
+        "metalclick"
+      ],
+      "category": "neutral",
+      "subtitle": "Something Metal Clicks"
+    },
+    {
+      "name": "machinehum",
+      "files": [
+        "short_motor_sound"
+      ],
+      "category": "neutral",
+      "subtitle": "Hum Of Machinery"
+    },
+    {
+      "name": "machineshutdown",
+      "files": [
+        "short_motor_shutdown"
+      ],
+      "category": "neutral",
+      "subtitle": "A machine Shuts Down"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "item.advanced_weaponry.exoskeleton_helmet": "Exoskeleton Helmet",
+      "item.advanced_weaponry.beam_rifle": "Beam Rifle",
+      "subtitles.machinehum": "Hum Of Machinery",
+      "subtitles.laserdelta": "A Laser FIres",
+      "item.advanced_weaponry.emp_grenade": "EMP Grenade",
+      "subtitles.metalclick": "Something Metal Clicks",
+      "entity.advanced_weaponry.exoskeleton_entity": "Exoskeleton Entity",
+      "item.advanced_weaponry.exoskeleton_chestplate": "Exoskeleton Chest",
+      "item.advanced_weaponry.exoskeleton_leggings": "Exoskeleton Pants",
+      "item.advanced_weaponry.exoskeleton_boots": "Exoskeleton Boots",
+      "block.advanced_weaponry.exoskeleton_charger": "Exoskeleton Charger",
+      "effect.advanced_weaponry.emp": "EMP-Locked",
+      "entity.advanced_weaponry.beam_entity": "Beam Entity",
+      "key.advanced_weaponry.exit_exoskeleton": "Exit Exoskeleton",
+      "item.advanced_weaponry.exoskeleton_entity_spawn_egg": "Exoskeleton Entity Spawn Egg",
+      "subtitles.machineshutdown": "A machine Shuts Down"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Exoskeleton",
+        "children": []
+      },
+      {
+        "name": "BeamRifle",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "advanced_weaponry",
+    "modName": "Advanced Weaponry",
+    "version": "1.0.0",
+    "author": "Laptop, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.advancedweaponry",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

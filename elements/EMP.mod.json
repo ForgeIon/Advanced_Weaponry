@@ -1,0 +1,23 @@
+{
+  "_fv": 57,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "EMP-Locked",
+    "icon": "temp.png",
+    "color": {
+      "value": -13369345,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "EMPStart"
+    },
+    "onActiveTick": {
+      "name": "EMP_Tick"
+    }
+  }
+}

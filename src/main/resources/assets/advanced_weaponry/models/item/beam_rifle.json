@@ -1,0 +1,7 @@
+{
+  "parent": "advanced_weaponry:custom/laserblaster",
+  "textures": {
+    "0": "advanced_weaponry:blocks/blastertexture",
+    "particle": "advanced_weaponry:items/blastertexture"
+  }
+}

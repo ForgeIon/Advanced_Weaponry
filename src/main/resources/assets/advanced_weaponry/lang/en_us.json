@@ -1,0 +1,18 @@
+{
+  "item.advanced_weaponry.exoskeleton_helmet": "Exoskeleton Helmet",
+  "item.advanced_weaponry.beam_rifle": "Beam Rifle",
+  "subtitles.machinehum": "Hum Of Machinery",
+  "subtitles.laserdelta": "A Laser FIres",
+  "item.advanced_weaponry.emp_grenade": "EMP Grenade",
+  "subtitles.metalclick": "Something Metal Clicks",
+  "entity.advanced_weaponry.exoskeleton_entity": "Exoskeleton Entity",
+  "item.advanced_weaponry.exoskeleton_chestplate": "Exoskeleton Chest",
+  "item.advanced_weaponry.exoskeleton_leggings": "Exoskeleton Pants",
+  "item.advanced_weaponry.exoskeleton_boots": "Exoskeleton Boots",
+  "block.advanced_weaponry.exoskeleton_charger": "Exoskeleton Charger",
+  "effect.advanced_weaponry.emp": "EMP-Locked",
+  "entity.advanced_weaponry.beam_entity": "Beam Entity",
+  "key.advanced_weaponry.exit_exoskeleton": "Exit Exoskeleton",
+  "item.advanced_weaponry.exoskeleton_entity_spawn_egg": "Exoskeleton Entity Spawn Egg",
+  "subtitles.machineshutdown": "A machine Shuts Down"
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "advanced_weaponry:blocks/blastertexture",
+    "particle": "advanced_weaponry:blocks/blastertexture"
+  },
+  "render_type": "solid"
+}
